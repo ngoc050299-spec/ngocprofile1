@@ -3,78 +3,135 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Ngọc's Portfolio</title>
+    <title>CV - Ngọc</title>
     <style>
         :root {
-            --primary-color: #2d3436;
-            --accent-color: #0984e3;
-            --bg-color: #f5f6fa;
+            --primary: #2563eb;
+            --text: #1e293b;
+            --bg: #f8fafc;
         }
 
         body {
-            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            font-family: 'Inter', system-ui, -apple-system, sans-serif;
+            line-height: 1.6;
+            color: var(--text);
+            background-color: var(--bg);
             margin: 0;
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            height: 100vh;
-            background-color: var(--bg-color);
-            color: var(--primary-color);
+            padding: 40px 20px;
         }
 
-        .card {
+        .container {
+            max-width: 800px;
+            margin: 0 auto;
             background: white;
-            padding: 2rem;
-            border-radius: 20px;
-            box-shadow: 0 10px 30px rgba(0,0,0,0.1);
+            padding: 40px;
+            border-radius: 12px;
+            box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1);
+        }
+
+        header {
             text-align: center;
-            max-width: 400px;
-            transition: transform 0.3s ease;
+            border-bottom: 2px solid #e2e8f0;
+            padding-bottom: 20px;
+            margin-bottom: 30px;
         }
 
-        .card:hover {
-            transform: translateY(-10px);
+        h1 { margin: 0; color: var(--primary); font-size: 2.5rem; }
+        .subtitle { font-size: 1.1rem; color: #64748b; margin-top: 5px; }
+
+        h2 {
+            border-left: 4px solid var(--primary);
+            padding-left: 15px;
+            color: var(--text);
+            font-size: 1.5rem;
+            margin-top: 30px;
         }
 
-        .avatar {
-            width: 120px;
-            height: 120px;
-            background: var(--accent-color);
-            border-radius: 50%;
-            margin: 0 auto 1rem;
+        .section { margin-bottom: 20px; }
+
+        .item {
+            margin-bottom: 15px;
+            padding: 10px 0;
+        }
+
+        .item-title { font-weight: bold; font-size: 1.1rem; }
+        .item-sub { color: var(--primary); font-weight: 500; }
+        .item-date { font-style: italic; color: #94a3b8; font-size: 0.9rem; }
+
+        .skills {
             display: flex;
-            justify-content: center;
-            align-items: center;
-            font-size: 3rem;
-            color: white;
+            flex-wrap: wrap;
+            gap: 10px;
+            list-style: none;
+            padding: 0;
         }
 
-        h1 { margin: 0; font-size: 1.8rem; }
-        p { color: #636e72; line-height: 1.6; }
+        .skill-tag {
+            background: #dbeafe;
+            color: var(--primary);
+            padding: 5px 15px;
+            border-radius: 20px;
+            font-size: 0.9rem;
+            font-weight: 500;
+        }
 
-        .btn {
+        .contact-link {
             display: inline-block;
-            margin-top: 1rem;
-            padding: 10px 25px;
-            background: var(--accent-color);
-            color: white;
+            margin-top: 20px;
+            color: var(--primary);
             text-decoration: none;
-            border-radius: 25px;
             font-weight: bold;
-            transition: opacity 0.2s;
         }
-
-        .btn:hover { opacity: 0.9; }
     </style>
 </head>
 <body>
 
-    <div class="card">
-        <div class="avatar">👨‍💻</div>
-        <h1>Xin chào, mình là Ngọc 👋</h1>
-        <p>Đây là trang web đầu tiên mình tự tay triển khai trên Vercel. Mình đang trên hành trình khám phá thế giới lập trình!</p>
-        <a href="https://github.com" class="btn">Ghé thăm GitHub của mình</a>
+<div class="container">
+    <header>
+        <h1>NGUYỄN VĂN NGỌC</h1>
+        <div class="subtitle">Web Developer / Lập trình viên tập sự</div>
+        <p>Email: ngoc@example.com | SĐT: 0123 456 789</p>
+    </header>
+
+    <div class="section">
+        <h2>Giới thiệu bản thân</h2>
+        <p>Mình là một người đam mê công nghệ, thích tìm tòi và học hỏi những điều mới lạ về lập trình web. Đây là trang web đầu tiên mình tự tay triển khai trên môi trường thực tế.</p>
     </div>
+
+    <div class="section">
+        <h2>Kỹ năng</h2>
+        <ul class="skills">
+            <li class="skill-tag">HTML5 / CSS3</li>
+            <li class="skill-tag">JavaScript</li>
+            <li class="skill-tag">Git / GitHub</li>
+            <li class="skill-tag">Vercel Deployment</li>
+            <li class="skill-tag">Giao tiếp & Làm việc nhóm</li>
+        </ul>
+    </div>
+
+    <div class="section">
+        <h2>Kinh nghiệm / Dự án</h2>
+        <div class="item">
+            <div class="item-title">Dự án Website Cá Nhân</div>
+            <div class="item-sub">Vai trò: Phát triển chính</div>
+            <div class="item-date">Tháng 12/2024 - Hiện tại</div>
+            <p>Xây dựng và triển khai trang web giới thiệu bản thân bằng HTML/CSS lên nền tảng Vercel thông qua GitHub.</p>
+        </div>
+    </div>
+
+    <div class="section">
+        <h2>Học vấn</h2>
+        <div class="item">
+            <div class="item-title">Tên Trường Đại học / Trung tâm</div>
+            <div class="item-sub">Chuyên ngành Công nghệ thông tin</div>
+            <div class="item-date">2022 - Hiện tại</div>
+        </div>
+    </div>
+
+    <center>
+        <a href="mailto:email-cua-ban@gmail.com" class="contact-link">Liên hệ với mình ngay!</a>
+    </center>
+</div>
 
 </body>
 </html>
