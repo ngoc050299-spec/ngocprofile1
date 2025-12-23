@@ -1,10 +1,80 @@
 <!DOCTYPE html>
-<html>
+<html lang="vi">
 <head>
-  <title>Ngoc Profile</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ngọc's Portfolio</title>
+    <style>
+        :root {
+            --primary-color: #2d3436;
+            --accent-color: #0984e3;
+            --bg-color: #f5f6fa;
+        }
+
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            margin: 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            background-color: var(--bg-color);
+            color: var(--primary-color);
+        }
+
+        .card {
+            background: white;
+            padding: 2rem;
+            border-radius: 20px;
+            box-shadow: 0 10px 30px rgba(0,0,0,0.1);
+            text-align: center;
+            max-width: 400px;
+            transition: transform 0.3s ease;
+        }
+
+        .card:hover {
+            transform: translateY(-10px);
+        }
+
+        .avatar {
+            width: 120px;
+            height: 120px;
+            background: var(--accent-color);
+            border-radius: 50%;
+            margin: 0 auto 1rem;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            font-size: 3rem;
+            color: white;
+        }
+
+        h1 { margin: 0; font-size: 1.8rem; }
+        p { color: #636e72; line-height: 1.6; }
+
+        .btn {
+            display: inline-block;
+            margin-top: 1rem;
+            padding: 10px 25px;
+            background: var(--accent-color);
+            color: white;
+            text-decoration: none;
+            border-radius: 25px;
+            font-weight: bold;
+            transition: opacity 0.2s;
+        }
+
+        .btn:hover { opacity: 0.9; }
+    </style>
 </head>
 <body>
-  <h1>Hello, I'm Ngoc 👋</h1>
-  <p>This is my first website deployed on Vercel.</p>
+
+    <div class="card">
+        <div class="avatar">👨‍💻</div>
+        <h1>Xin chào, mình là Ngọc 👋</h1>
+        <p>Đây là trang web đầu tiên mình tự tay triển khai trên Vercel. Mình đang trên hành trình khám phá thế giới lập trình!</p>
+        <a href="https://github.com" class="btn">Ghé thăm GitHub của mình</a>
+    </div>
+
 </body>
 </html>
